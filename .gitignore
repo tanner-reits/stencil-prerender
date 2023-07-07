@@ -1,1 +1,5 @@
 node_modules/
+
+# Ignore Stencil Outputs
+packages/stencil-library/dist
+packages/stencil-library/hydrate
