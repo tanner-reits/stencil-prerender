@@ -1,3 +1,25 @@
 :host {
   display: block;
 }
+
+::slotted(.class1) {
+  background: pink;
+}
+
+@supports selector(::slotted(*)) {
+  ::slotted(*) {
+    color: yellow;
+  }
+}
+
+@supports selector(:host()) {
+  :host {
+    color: red;
+  }
+}
+
+@supports selector(:host-context(.md)) {
+  :host-context(.md) {
+    color: blue;
+  }
+}
